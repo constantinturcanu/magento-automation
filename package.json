@@ -1,0 +1,27 @@
+{
+  "name": "magento-test-automation",
+  "version": "1.0.0",
+  "description": "End-to-end (e2e) test automation framework for the Magento 2 demo store",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier-eslint \"src/**/*.ts\" --write",
+    "lint": "tsc --project ./tsconfig.json --noEmit && eslint --fix --ext ts,tsx,js,jsx src/"
+  },
+  "keywords": [],
+  "author": "Constantin Turcanu",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+		"@types/node": "^18.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+		"@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-check-file": "^2.4.0",
+		"eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+		"prettier-eslint": "^13.0.0",
+		"prettier-eslint-cli": "^8.0.1",
+    "typescript": "^5.2.0"
+  }
+}
