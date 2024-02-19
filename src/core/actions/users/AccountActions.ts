@@ -16,6 +16,7 @@ export class AccountActions {
 		username: string
 		pass: string
 	}): Promise<void> {
+		console.log(`Sign In user ${parameters.username}`)
 		const homePage = new HomePage(this.#page)
 		await homePage.waitToBeVisible()
 		await absoluteWait(1 * 1000)
@@ -40,6 +41,11 @@ export class AccountActions {
 		email: string
 		password: string
 	}): Promise<void> {
+		console.log(
+			`Create account with the following details ${JSON.stringify(
+				parameters
+			)}`
+		)
 		const homePage = new HomePage(this.#page)
 		await homePage.waitToBeVisible()
 		await homePage.createAnAccountButton.click()

@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "End-to-end (e2e) test automation framework for the Magento 2 demo store",
   "scripts": {
-    "build": "tsc",
-    "format": "prettier-eslint \"src/**/*.ts\" --write",
-    "lint": "tsc --project ./tsconfig.json --noEmit && eslint --fix --ext ts,tsx,js,jsx src/"
   },
   "keywords": [],
   "author": "Constantin Turcanu",

@@ -1,4 +1,5 @@
 export type WomenProductsCategories =
+	| 'Women'
 	| 'Women Tops'
 	| 'Women Bottoms'
 	| 'Women Tops Jackets'

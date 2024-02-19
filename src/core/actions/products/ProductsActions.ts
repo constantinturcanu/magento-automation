@@ -14,12 +14,14 @@ export class ProductsActions {
 		category: WomenProductsCategories
 		productName: string
 	}): Promise<void> {
+		console.log(
+			`Browse for product "${parameters.productName}" in category "${parameters.category}"`
+		)
 		const menuBar = new MenuBar(this.#page)
 		await menuBar.waitToBeVisible()
-		if (parameters.category === 'Women Tops') {
-			await menuBar.womenButton.hover()
-			await menuBar.womenTopsButton.waitToBeVisible()
-			await menuBar.womenTopsButton.click()
+		if (parameters.category === 'Women') {
+			await menuBar.womenButton.click()
+
 		}
 		const productsPage = new ProductsPage(this.#page)
 		await productsPage.waitToBeVisible()

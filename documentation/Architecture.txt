@@ -1,0 +1,34 @@
+Magento 2 Demo Store Test Automation Solution Architecture
+
+The framework is built on layers:
+ - Tests
+ - Actions
+ - Models
+ - Common Configuration
+
+
++-----------------+
+|      Tests      | 
++-----------------+
+         |
+         v
++-----------------+
+| Actions Factory |
++-----------------+
+|     Actions     |
++-----------------+
+         |
+         v
++-----------------+
+|   Page Models   |
++-----------------+
+         |
+         v
++-----------------+
+|     Common      |
++-----------------+
+
+Design Patterns used:
+ - Page Object Models
+ - Keyword Driven Testing
+ - Factory
